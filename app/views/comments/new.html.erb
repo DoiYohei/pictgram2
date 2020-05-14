@@ -1,0 +1,15 @@
+<div class="comments-new-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10 comments-new-container">
+        <h1 class="text-left text-black">コメント</h1>
+        <div class="form-inline">
+          <%= form_for [@topic, @comment] do |f|  %>
+            <%= f.text_field :content, class: "form-control" %>
+            <%= f.submit 'コメントする', class: "btn btn-black" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
